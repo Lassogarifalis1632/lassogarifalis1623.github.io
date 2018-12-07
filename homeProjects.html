@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Javascript Projects</title>
+    <script src="myJava.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="skills.html">Travel</a>
+    <a href="lookingAhead.html">The Gameplan</a>
+    <a class="active" href="homeProjects.html">Home Projects</a>
+    <a href="binaryPage.html">Base Converter</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="madLib.html">Mad Libs</a>
+    <a href="quiz.html">Quiz</a>
+
+
+</div>
+<div>
+    <form name="homeproject1">
+    <h4>Temperature Bug</h4>
+    <br><br>
+    Please enter a temperature in °F:<input type="text" name="temp">
+    <br><br>
+    <button type="button" onclick="document.homeproject1.result.value=TemperatureBug()">What Season is it?</button>
+    <input type="text" readonly="true" name="result" style="border-style: none;" size="35px">
+    <br><br>
+    <img id="weather" src="" height="225">
+    </form>
+
+    <form name="homeproject2">
+        <h4>Calorie Counter</h4>
+
+        Select Activity: <select id="activities">
+        <option value="walk">Walking</option>
+        <option value="jog">Jogging</option>
+        <option value="run">Running</option>
+    </select>
+        <br><br>
+        How many minutes?:<input type="text" name="time">
+        <br><br><br>
+        <button type="button" onclick="document.homeproject2.result.value=CalorieCounter()">How Many Calories?</button>
+        <br><br>
+        <input type="text" readonly="true" name="result" style="border-style: none;">
+    </form>
+
+    <form name="homeproject3">
+        <h4>Assign Grade</h4>
+        <br>
+        Please input a numerical value to receive your grade:<input type="text" name="grade">
+        <br>
+        <button type="button" onclick="document.homeproject3.result.value=assignGrade()">Convert!</button>
+        <br><br>
+        <input type="text" readonly="true" name="result" style="border-style: none;">
+    </form>
+</div>
+
+</body>
+</html>

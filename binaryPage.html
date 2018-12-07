@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="myJava.js"></script>
+    <title>Base Converter!!!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="skills.html">Travel</a>
+    <a href="lookingAhead.html">The Gameplan</a>
+    <a href="homeProjects.html">Home Projects</a>
+    <a class="active" href="binaryPage.html">Base Converter</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="madLib.html">Mad Libs</a>
+    <a href="quiz.html">Quiz</a>
+
+
+
+
+</div>
+
+<form name="toBinary">
+    <h4>To Binary!</h4>
+    <br><br>
+    Input a number in Base 10:<input name="input">
+    <br><br>
+    Here's the binary form:<input name="result" readonly="true">
+
+    <button type="button" onclick="document.toBinary.result.value=tenToSmall(Number(document.toBinary.input.value), 2)">to Binary</button>
+</form>
+
+<br><br><br><br>
+<form name="toTen">
+    <h4>To Base Ten!</h4>
+    <br><br>
+    Input a number in Binary:<input name="input">
+    <br><br>
+    Here's the Base 10 form:<input name="result" readonly="true">
+
+    <button type="button" onclick="document.toTen.result.value=smallToTen()">to Ten</button>
+</form>
+
+<form name="baseConvert">
+    <h4>Convert Any Base!</h4>
+    <br><br>
+    Please enter a number:<input name="number">
+    <br><br>
+    Let me know what base that's in:<input name="bochka1">
+    <br><br>
+    What base do you want that to be?:<input name="bochka2">
+    <br><br>
+    Here's your number:<input name="result" readonly="true">
+    <button type="button" onclick="document.baseConvert.result.value=baseConverter()">To New Base</button>
+
+</form>
+
+</body>
+</html>

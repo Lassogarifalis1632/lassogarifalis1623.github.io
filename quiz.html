@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Time!</title>
+    <script src="myJava.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="skills.html">Travel</a>
+    <a href="lookingAhead.html">The Gameplan</a>
+    <a href="homeProjects.html">Home Projects</a>
+    <a href="binaryPage.html">Base Converter</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="madLib.html">Mad Libs</a>
+    <a class="active" href="quiz.html">Quiz</a>
+</div>
+
+<form name="quiz">
+    <br><br><br><br>
+    <div style="text-align:center;">
+    Question 1: How many POKéMON are in Generation 1?<br><br>
+    <input type="text" name="a1">
+
+    <br><br><br>
+    <img src="img/flapJack.JPEG" height=40% width="40%"/>
+    <br><br><br>
+    Question 2: Who is Captain K'Nuckles' best friend to the left?<br><br>
+    <input type="text" name="a2">
+    <br><br><br>
+    Question 3: Who is the greatest rapper of our generation?<br>
+        <br>
+    <input type="radio" name="a3" value="KDot">Kendrick Lamar<br>
+    <input type="radio" name="a3" value="Pump">Lil Pump<br>
+    <input type="radio" name="a3" value="Logic">Logic<br>
+    <input type="radio" name="a3" value="Drake">Drake<br>
+    <br><br>
+    Question 4: Which character is not in Smash Bros. Ultimate?<br>
+        <br>
+    <input type="radio" name="a4" value="Mario">Mario<br>
+    <input type="radio" name="a4" value="Luigi">Luigi<br>
+    <input type="radio" name="a4" value="Waluigi">Waluigi<br>
+    <input type="radio" name="a4" value="Wario">Wario<br>
+    <br><br>
+    Question 5: Which movies have grossed over $1b?<br>
+        <br>
+    <input type="checkbox" name="a5A" value="Jurassic">Jurassic Park<br>
+    <input type="checkbox" name="a5B" value="Spiderman">Spiderman: Homecoming<br>
+    <input type="checkbox" name="a5C" value="Toys">Toy Story 3<br>
+    <input type="checkbox" name="a5D" value="Stars">Star Wars: Episode 1 - The Phantom Menace<br>
+    <input type="checkbox" name="a5E" value="Gatsby">The Great Gatsby<br>
+    <br><br>
+    Question 6: Which teams have won a Superbowl in the last 10 years?<br>
+    <input type="checkbox" name="a6A" value="Bears">Bears<br>
+    <input type="checkbox" name="a6B" value="Saints">Saints<br>
+    <input type="checkbox" name="a6C" value="Falcons">Falcons<br>
+    <input type="checkbox" name="a6D" value="Yankees">Yankees<br>
+    <input type="checkbox" name="a6E" value="Giants">Giants<br>
+    <br>
+    <button type="button" class="mainText" onclick="document.getElementById('result').innerHTML=checkAnswers()">CHECK ANSWERS</button>
+    <br><br><br><br><br>
+
+        <p1>Final Score:</p1> <p1 id="result"></p1>
+
+        <br><br><br><br><br><br>
+
+    </div>
+
+</form>
+
+
+
+</body>
+</html>

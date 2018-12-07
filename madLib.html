@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="myJava.js"></script>
+    <title>MadLibs! </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="skills.html">Travel</a>
+    <a href="lookingAhead.html">The Gameplan</a>
+    <a href="homeProjects.html">Home Projects</a>
+    <a href="binaryPage.html">Base Converter</a>
+    <a href="calculator.html">Calculator</a>
+    <a class="active" href="madLib.html">Mad Libs</a>
+    <a href="quiz.html">Quiz</a>
+
+</div>
+
+<!-- Words: Vegetable, adjective, animal, adjective(2), number, emotion ending in -ed, verb, noun, emotion, measure of time, city
+There once was a farmer known as Ol' (insert vegetable + "head") who spent his weary days tending to his (insert adjective) pasture.
+One day, while Ol' (insert vegetable + "head") was herding his (insert animal), a (insert adjective(2)) UFO crash landed a mere (insert number) feet away from him.
+(insert emotion ending with -ed), Ol' (insert vegetable + "head") decided to investigate the seemingly (insert verb) object. To his surprise, when he moved closer,
+he found that the UFO contained a (insert noun)! Ol' (insert vegetable + "head") was filled with (insert emotion) after learning this, but didn't know what to do.
+After a few (insert measure of time), Ol' (insert vegetable + "head") decided to hide this from the world, and hid the (insert noun) at (insert City). To this day, the (insert noun)
+was never discovered, and some say that if you travel to (insert City), you may find this treasure yourself!
+
+-->
+<br><br>
+<form name="madLivs">
+    <h2 class="mainText">Please enter below:</h2>
+    <br>
+    <div class="mainText">
+        A Vegetable: <input type="text" name="text1">
+        <br><br>
+        An Adjective: <input type="text" name="text2">
+        <br><br>
+        An Animal: <input type="text" name="text3">
+        <br><br>
+        An Adjective: <input type="text" name="text4">
+        <br><br>
+        A Number: <input type="text" name="text5">
+        <br><br>
+        An emotion ending with -ed: <input type="text" name="text6">
+        <br><br>
+        An adjective: <input type="text" name="text7">
+        <br><br>
+        A Noun: <input type="text" name="text8">
+        <br><br>
+        An emotion: <input type="text" name="text9">
+        <br><br>
+        A Measure Of Time: <input type="text" name="text10">
+        <br><br>
+        A City: <input type="text" name="text11">
+    </div>
+    <br><br>
+    <div style="text-align:center;">
+    <button class="mainText" type="button" onclick="document.getElementById('story').innerHTML=madLib()">Convert</button>
+    <br><br>
+    <h2 class="center">Here is your Story!</h2>
+    <br><br><br>
+    <p1 id="story" class="mainText"></p1>
+    </div>
+    <br><br><br><br>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="myJava.js"></script>
+    <link rel="stylesheet" type="text/css" href="calcStyle.css">
+    <title>JavaScript Calculator</title>
+</head>
+<body>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="friends.html">Friends</a>
+    <a href="skills.html">Travel</a>
+    <a href="lookingAhead.html">The Gameplan</a>
+    <a href="homeProjects.html">Home Projects</a>
+    <a href="binaryPage.html">Base Converter</a>
+    <a class="active" href="calculator.html">Calculator</a>
+    <a href="madLib.html">Mad Libs</a>
+    <a href="quiz.html">Quiz</a>
+
+
+</div>
+<form name="calculator" class="calculator">
+    <input name="calcWindow" type="text" class="textview" readonly="true">
+    <br>
+    <button type="button" class="button" value="" onclick="document.calculator.calcWindow.value=''">C</button>
+    <button type="button" class="button" value="^" onclick="document.calculator.calcWindow.value+='^'">^</button>
+    <button type="button" class="button" value="+" onclick="document.calculator.calcWindow.value+='+'">+</button>
+    <button type="button" class="button" value="-" onclick="document.calculator.calcWindow.value+='-'">-</button>
+    <br>
+    <button type="button" class="button" value="7" onclick="document.calculator.calcWindow.value+=7">7</button>
+    <button type="button" class="button" value="8" onclick="document.calculator.calcWindow.value+=8">8</button>
+    <button type="button" class="button" value="9" onclick="document.calculator.calcWindow.value+=9">9</button>
+    <button type="button" class="button" value="*" onclick="document.calculator.calcWindow.value+='*'">*</button>
+    <br>
+    <button type="button" class="button" value="4" onclick="document.calculator.calcWindow.value+=4">4</button>
+    <button type="button" class="button" value="5" onclick="document.calculator.calcWindow.value+=5">5</button>
+    <button type="button" class="button" value="6" onclick="document.calculator.calcWindow.value+=6">6</button>
+    <button type="button" class="button" value="/" onclick="document.calculator.calcWindow.value+='/'">/</button>
+    <br>
+    <button type="button" class="button" value="1" onclick="document.calculator.calcWindow.value+=1">1</button>
+    <button type="button" class="button" value="2" onclick="document.calculator.calcWindow.value+=2">2</button>
+    <button type="button" class="button" value="3" onclick="document.calculator.calcWindow.value+=3">3</button>
+    <button type="button" class="button" value="=" onclick="document.calculator.calcWindow.value=calculate(document.calculator.calcWindow.value)">=</button>
+
+    <br>
+    <button type="button" class="buttonLong" value="0" onclick="document.calculator.calcWindow.value+=0">0</button>
+    <button type="button" class="button" value="del" onclick="document.calculator.calcWindow.value=deleteChar(document.calculator.calcWindow.value)">Del</button>
+</form>
+
+</body>
+</html>
